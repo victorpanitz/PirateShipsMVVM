@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180FF045539BEBF16E0D543E /* Pods_PirateShipsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D6AE02321AF2894310A13C /* Pods_PirateShipsApp.framework */; };
+		7132A7CC22956963003FBD25 /* ShipDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7132A7CB22956963003FBD25 /* ShipDetailsViewModelTests.swift */; };
+		7197804B22382CD10067B0D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197804A22382CD10067B0D6 /* AppDelegate.swift */; };
+		7197804D22382CD10067B0D6 /* ShipsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197804C22382CD10067B0D6 /* ShipsListViewController.swift */; };
+		7197805322382CD10067B0D6 /* PirateShipsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7197805122382CD10067B0D6 /* PirateShipsApp.xcdatamodeld */; };
+		7197805522382CD30067B0D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7197805422382CD30067B0D6 /* Assets.xcassets */; };
+		7197805822382CD30067B0D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7197805622382CD30067B0D6 /* LaunchScreen.storyboard */; };
+		7197806322382CD30067B0D6 /* ShipsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197806222382CD30067B0D6 /* ShipsListViewModelTests.swift */; };
+		71DA4DE0223F270B000B88EB /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA4DDF223F270B000B88EB /* CustomLabel.swift */; };
+		71DA4DE3223F29CC000B88EB /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA4DE2223F29CC000B88EB /* UIImageView.swift */; };
+		71DA4DE5223F2C14000B88EB /* ShipsListHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA4DE4223F2C14000B88EB /* ShipsListHeaderCell.swift */; };
+		71DA4DE7223F3682000B88EB /* ShipsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA4DE6223F3682000B88EB /* ShipsListRouter.swift */; };
+		71DA4DEC223F5A18000B88EB /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA4DEB223F5A18000B88EB /* LoadingManager.swift */; };
+		71DA4DF1223F617C000B88EB /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA4DF0223F617C000B88EB /* Loader.swift */; };
+		71DA4DF322402228000B88EB /* ShipsListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA4DF222402228000B88EB /* ShipsListRouterTests.swift */; };
+		71DA4DF9224030DF000B88EB /* ShipDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA4DF8224030DF000B88EB /* ShipDetailsViewModel.swift */; };
+		71DA4DFD2240334C000B88EB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA4DFC2240334C000B88EB /* Result.swift */; };
+		71DA4DFF2240338A000B88EB /* ShipDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA4DFE2240338A000B88EB /* ShipDetailsRouter.swift */; };
+		71DA4E01224033C2000B88EB /* ShipDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA4E00224033C2000B88EB /* ShipDetailsViewController.swift */; };
+		71DA4E0322409127000B88EB /* ShipDetailsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA4E0222409127000B88EB /* ShipDetailsRouterTests.swift */; };
+		71DEBC6D2239EFB30010FB06 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC6C2239EFB30010FB06 /* Ship.swift */; };
+		71DEBC6F2239EFFB0010FB06 /* ShipsListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC6E2239EFFB0010FB06 /* ShipsListProtocols.swift */; };
+		71DEBC712239F6320010FB06 /* ShipsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC702239F6320010FB06 /* ShipsListViewModel.swift */; };
+		71DEBC732239F6E10010FB06 /* ShipsListRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC722239F6E10010FB06 /* ShipsListRepositoryTests.swift */; };
+		71DEBC7A2239F9930010FB06 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC792239F9930010FB06 /* APIProvider.swift */; };
+		71DEBC7D2239F9E50010FB06 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC7C2239F9E50010FB06 /* Path.swift */; };
+		71DEBC7F2239FB8B0010FB06 /* APICore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC7E2239FB8B0010FB06 /* APICore.swift */; };
+		71DEBC812239FDCB0010FB06 /* PirateShipsOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC802239FDCB0010FB06 /* PirateShipsOutput.swift */; };
+		71DEBC832239FDE10010FB06 /* ShipOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC822239FDE10010FB06 /* ShipOutput.swift */; };
+		71DEBC852239FE120010FB06 /* APIStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC842239FE120010FB06 /* APIStub.swift */; };
+		71DEBC87223B42E50010FB06 /* ShipsListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC86223B42E50010FB06 /* ShipsListRepository.swift */; };
+		71DEBC8B223B53840010FB06 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC8A223B53840010FB06 /* CoreDataManager.swift */; };
+		71DEBC8D223B538F0010FB06 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC8C223B538F0010FB06 /* CoreDataProvider.swift */; };
+		71DEBC92223D4A0D0010FB06 /* CoreDataStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC91223D4A0D0010FB06 /* CoreDataStub.swift */; };
+		71DEBC94223DAB8C0010FB06 /* ShipsListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC93223DAB8C0010FB06 /* ShipsListItemCell.swift */; };
+		71DEBC97223ED6690010FB06 /* ShipsListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC96223ED6690010FB06 /* ShipsListItemViewModel.swift */; };
+		71DEBC9A223ED6C20010FB06 /* ShipsListItemViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBC99223ED6C20010FB06 /* ShipsListItemViewModelTests.swift */; };
+		A95A56D7E53A581079A8004F /* Pods_PirateShipsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C37D64AC473084683FA2A70 /* Pods_PirateShipsAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7197805F22382CD30067B0D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7197803F22382CD10067B0D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7197804622382CD10067B0D6;
+			remoteInfo = PirateShipsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D239C01A9D375A9279399AB /* Pods-PirateShipsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PirateShipsApp.release.xcconfig"; path = "Target Support Files/Pods-PirateShipsApp/Pods-PirateShipsApp.release.xcconfig"; sourceTree = "<group>"; };
+		7132A7CB22956963003FBD25 /* ShipDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		7197804722382CD10067B0D6 /* PirateShipsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PirateShipsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7197804A22382CD10067B0D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7197804C22382CD10067B0D6 /* ShipsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsListViewController.swift; sourceTree = "<group>"; };
+		7197805222382CD10067B0D6 /* PirateShipsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PirateShipsApp.xcdatamodel; sourceTree = "<group>"; };
+		7197805422382CD30067B0D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7197805722382CD30067B0D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7197805922382CD30067B0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7197805E22382CD30067B0D6 /* PirateShipsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PirateShipsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7197806222382CD30067B0D6 /* ShipsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsListViewModelTests.swift; sourceTree = "<group>"; };
+		7197806422382CD30067B0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71DA4DDF223F270B000B88EB /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		71DA4DE2223F29CC000B88EB /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		71DA4DE4223F2C14000B88EB /* ShipsListHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsListHeaderCell.swift; sourceTree = "<group>"; };
+		71DA4DE6223F3682000B88EB /* ShipsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsListRouter.swift; sourceTree = "<group>"; };
+		71DA4DEB223F5A18000B88EB /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
+		71DA4DF0223F617C000B88EB /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		71DA4DF222402228000B88EB /* ShipsListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsListRouterTests.swift; sourceTree = "<group>"; };
+		71DA4DF8224030DF000B88EB /* ShipDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDetailsViewModel.swift; sourceTree = "<group>"; };
+		71DA4DFC2240334C000B88EB /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		71DA4DFE2240338A000B88EB /* ShipDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDetailsRouter.swift; sourceTree = "<group>"; };
+		71DA4E00224033C2000B88EB /* ShipDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDetailsViewController.swift; sourceTree = "<group>"; };
+		71DA4E0222409127000B88EB /* ShipDetailsRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDetailsRouterTests.swift; sourceTree = "<group>"; };
+		71DEBC6C2239EFB30010FB06 /* Ship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		71DEBC6E2239EFFB0010FB06 /* ShipsListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipsListProtocols.swift; sourceTree = "<group>"; };
+		71DEBC702239F6320010FB06 /* ShipsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsListViewModel.swift; sourceTree = "<group>"; };
+		71DEBC722239F6E10010FB06 /* ShipsListRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsListRepositoryTests.swift; sourceTree = "<group>"; };
+		71DEBC792239F9930010FB06 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		71DEBC7C2239F9E50010FB06 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		71DEBC7E2239FB8B0010FB06 /* APICore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICore.swift; sourceTree = "<group>"; };
+		71DEBC802239FDCB0010FB06 /* PirateShipsOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateShipsOutput.swift; sourceTree = "<group>"; };
+		71DEBC822239FDE10010FB06 /* ShipOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipOutput.swift; sourceTree = "<group>"; };
+		71DEBC842239FE120010FB06 /* APIStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStub.swift; sourceTree = "<group>"; };
+		71DEBC86223B42E50010FB06 /* ShipsListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsListRepository.swift; sourceTree = "<group>"; };
+		71DEBC8A223B53840010FB06 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		71DEBC8C223B538F0010FB06 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		71DEBC91223D4A0D0010FB06 /* CoreDataStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStub.swift; sourceTree = "<group>"; };
+		71DEBC93223DAB8C0010FB06 /* ShipsListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsListItemCell.swift; sourceTree = "<group>"; };
+		71DEBC96223ED6690010FB06 /* ShipsListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsListItemViewModel.swift; sourceTree = "<group>"; };
+		71DEBC99223ED6C20010FB06 /* ShipsListItemViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsListItemViewModelTests.swift; sourceTree = "<group>"; };
+		9528DB52A18186449D1104FD /* Pods-PirateShipsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PirateShipsAppTests.release.xcconfig"; path = "Target Support Files/Pods-PirateShipsAppTests/Pods-PirateShipsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C37D64AC473084683FA2A70 /* Pods_PirateShipsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PirateShipsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE075138E95187D27F87710 /* Pods-PirateShipsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PirateShipsApp.debug.xcconfig"; path = "Target Support Files/Pods-PirateShipsApp/Pods-PirateShipsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C2D6AE02321AF2894310A13C /* Pods_PirateShipsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PirateShipsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD6D7AB67B7B97CAD5CE459 /* Pods-PirateShipsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PirateShipsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PirateShipsAppTests/Pods-PirateShipsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7197804422382CD10067B0D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180FF045539BEBF16E0D543E /* Pods_PirateShipsApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7197805B22382CD30067B0D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95A56D7E53A581079A8004F /* Pods_PirateShipsAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F6F7FB4A3D9EC2EA990687A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFE075138E95187D27F87710 /* Pods-PirateShipsApp.debug.xcconfig */,
+				1D239C01A9D375A9279399AB /* Pods-PirateShipsApp.release.xcconfig */,
+				CCD6D7AB67B7B97CAD5CE459 /* Pods-PirateShipsAppTests.debug.xcconfig */,
+				9528DB52A18186449D1104FD /* Pods-PirateShipsAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		708DE26D60CE1017D71D2FA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2D6AE02321AF2894310A13C /* Pods_PirateShipsApp.framework */,
+				9C37D64AC473084683FA2A70 /* Pods_PirateShipsAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7197803E22382CD10067B0D6 = {
+			isa = PBXGroup;
+			children = (
+				7197804922382CD10067B0D6 /* PirateShipsApp */,
+				7197806122382CD30067B0D6 /* PirateShipsAppTests */,
+				7197804822382CD10067B0D6 /* Products */,
+				4F6F7FB4A3D9EC2EA990687A /* Pods */,
+				708DE26D60CE1017D71D2FA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7197804822382CD10067B0D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7197804722382CD10067B0D6 /* PirateShipsApp.app */,
+				7197805E22382CD30067B0D6 /* PirateShipsAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7197804922382CD10067B0D6 /* PirateShipsApp */ = {
+			isa = PBXGroup;
+			children = (
+				71DA4DE1223F29BD000B88EB /* Extensions */,
+				71DA4DDE223F26F3000B88EB /* CustomComponents */,
+				71DEBC88223B535F0010FB06 /* DataManager */,
+				71DEBC6B2239EFB30010FB06 /* Entities */,
+				7197806E22382D1B0067B0D6 /* Modules */,
+				7197806D22382CEA0067B0D6 /* SupportingFiles */,
+				7197805122382CD10067B0D6 /* PirateShipsApp.xcdatamodeld */,
+			);
+			path = PirateShipsApp;
+			sourceTree = "<group>";
+		};
+		7197806122382CD30067B0D6 /* PirateShipsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				71DA4DFB224032C1000B88EB /* ShipDetails */,
+				71DA4DFA224032BD000B88EB /* ShipsListItem */,
+				71DEBC98223ED67B0010FB06 /* ShipsList */,
+				7197806422382CD30067B0D6 /* Info.plist */,
+			);
+			path = PirateShipsAppTests;
+			sourceTree = "<group>";
+		};
+		7197806D22382CEA0067B0D6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7197805422382CD30067B0D6 /* Assets.xcassets */,
+				7197804A22382CD10067B0D6 /* AppDelegate.swift */,
+				7197805622382CD30067B0D6 /* LaunchScreen.storyboard */,
+				7197805922382CD30067B0D6 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7197806E22382D1B0067B0D6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7197806F22382D230067B0D6 /* ShipsList */,
+				7197807022382D3E0067B0D6 /* ShipDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7197806F22382D230067B0D6 /* ShipsList */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC95223ED63C0010FB06 /* ShipListCells */,
+				71DEBC6E2239EFFB0010FB06 /* ShipsListProtocols.swift */,
+				7197804C22382CD10067B0D6 /* ShipsListViewController.swift */,
+				71DEBC702239F6320010FB06 /* ShipsListViewModel.swift */,
+				71DEBC86223B42E50010FB06 /* ShipsListRepository.swift */,
+				71DA4DE6223F3682000B88EB /* ShipsListRouter.swift */,
+			);
+			path = ShipsList;
+			sourceTree = "<group>";
+		};
+		7197807022382D3E0067B0D6 /* ShipDetails */ = {
+			isa = PBXGroup;
+			children = (
+				71DA4E00224033C2000B88EB /* ShipDetailsViewController.swift */,
+				71DA4DF8224030DF000B88EB /* ShipDetailsViewModel.swift */,
+				71DA4DFE2240338A000B88EB /* ShipDetailsRouter.swift */,
+			);
+			path = ShipDetails;
+			sourceTree = "<group>";
+		};
+		71DA4DDE223F26F3000B88EB /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				71DA4DE8223F59D2000B88EB /* CustomLoader */,
+				71DA4DDF223F270B000B88EB /* CustomLabel.swift */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		71DA4DE1223F29BD000B88EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				71DA4DE2223F29CC000B88EB /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		71DA4DE8223F59D2000B88EB /* CustomLoader */ = {
+			isa = PBXGroup;
+			children = (
+				71DA4DEB223F5A18000B88EB /* LoadingManager.swift */,
+				71DA4DF0223F617C000B88EB /* Loader.swift */,
+			);
+			path = CustomLoader;
+			sourceTree = "<group>";
+		};
+		71DA4DFA224032BD000B88EB /* ShipsListItem */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC99223ED6C20010FB06 /* ShipsListItemViewModelTests.swift */,
+			);
+			path = ShipsListItem;
+			sourceTree = "<group>";
+		};
+		71DA4DFB224032C1000B88EB /* ShipDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7132A7CB22956963003FBD25 /* ShipDetailsViewModelTests.swift */,
+				71DA4E0222409127000B88EB /* ShipDetailsRouterTests.swift */,
+			);
+			path = ShipDetails;
+			sourceTree = "<group>";
+		};
+		71DEBC6B2239EFB30010FB06 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC6C2239EFB30010FB06 /* Ship.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		71DEBC742239F7AD0010FB06 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC7B2239F9D90010FB06 /* APIPath */,
+				71DEBC762239F7C00010FB06 /* APICore */,
+				71DEBC782239F8150010FB06 /* APIProtocol */,
+				71DEBC752239F7B70010FB06 /* APIStub */,
+				71DEBC772239F7C60010FB06 /* Output */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		71DEBC752239F7B70010FB06 /* APIStub */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC842239FE120010FB06 /* APIStub.swift */,
+			);
+			path = APIStub;
+			sourceTree = "<group>";
+		};
+		71DEBC762239F7C00010FB06 /* APICore */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC7E2239FB8B0010FB06 /* APICore.swift */,
+			);
+			path = APICore;
+			sourceTree = "<group>";
+		};
+		71DEBC772239F7C60010FB06 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC802239FDCB0010FB06 /* PirateShipsOutput.swift */,
+				71DEBC822239FDE10010FB06 /* ShipOutput.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		71DEBC782239F8150010FB06 /* APIProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC792239F9930010FB06 /* APIProvider.swift */,
+			);
+			path = APIProtocol;
+			sourceTree = "<group>";
+		};
+		71DEBC7B2239F9D90010FB06 /* APIPath */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC7C2239F9E50010FB06 /* Path.swift */,
+			);
+			path = APIPath;
+			sourceTree = "<group>";
+		};
+		71DEBC88223B535F0010FB06 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC89223B53730010FB06 /* CoreData */,
+				71DEBC742239F7AD0010FB06 /* API */,
+				71DA4DFC2240334C000B88EB /* Result.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		71DEBC89223B53730010FB06 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC90223D488B0010FB06 /* CoreDataStub */,
+				71DEBC8F223D48810010FB06 /* CoreDataProtocol */,
+				71DEBC8E223D48750010FB06 /* CoreDataManager */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		71DEBC8E223D48750010FB06 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC8A223B53840010FB06 /* CoreDataManager.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		71DEBC8F223D48810010FB06 /* CoreDataProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC8C223B538F0010FB06 /* CoreDataProvider.swift */,
+			);
+			path = CoreDataProtocol;
+			sourceTree = "<group>";
+		};
+		71DEBC90223D488B0010FB06 /* CoreDataStub */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC91223D4A0D0010FB06 /* CoreDataStub.swift */,
+			);
+			path = CoreDataStub;
+			sourceTree = "<group>";
+		};
+		71DEBC95223ED63C0010FB06 /* ShipListCells */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC93223DAB8C0010FB06 /* ShipsListItemCell.swift */,
+				71DEBC96223ED6690010FB06 /* ShipsListItemViewModel.swift */,
+				71DA4DE4223F2C14000B88EB /* ShipsListHeaderCell.swift */,
+			);
+			path = ShipListCells;
+			sourceTree = "<group>";
+		};
+		71DEBC98223ED67B0010FB06 /* ShipsList */ = {
+			isa = PBXGroup;
+			children = (
+				71DEBC722239F6E10010FB06 /* ShipsListRepositoryTests.swift */,
+				7197806222382CD30067B0D6 /* ShipsListViewModelTests.swift */,
+				71DA4DF222402228000B88EB /* ShipsListRouterTests.swift */,
+			);
+			path = ShipsList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7197804622382CD10067B0D6 /* PirateShipsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7197806722382CD30067B0D6 /* Build configuration list for PBXNativeTarget "PirateShipsApp" */;
+			buildPhases = (
+				A6DA70DE53DAA2E91ED26FE3 /* [CP] Check Pods Manifest.lock */,
+				7197804322382CD10067B0D6 /* Sources */,
+				7197804422382CD10067B0D6 /* Frameworks */,
+				7197804522382CD10067B0D6 /* Resources */,
+				A75DB25E91473C6F2900EAA7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PirateShipsApp;
+			productName = PirateShipsApp;
+			productReference = 7197804722382CD10067B0D6 /* PirateShipsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7197805D22382CD30067B0D6 /* PirateShipsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7197806A22382CD30067B0D6 /* Build configuration list for PBXNativeTarget "PirateShipsAppTests" */;
+			buildPhases = (
+				5E92B856503A0A90AABE96B9 /* [CP] Check Pods Manifest.lock */,
+				7197805A22382CD30067B0D6 /* Sources */,
+				7197805B22382CD30067B0D6 /* Frameworks */,
+				7197805C22382CD30067B0D6 /* Resources */,
+				52AC98D0F9528F4834A87BDE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7197806022382CD30067B0D6 /* PBXTargetDependency */,
+			);
+			name = PirateShipsAppTests;
+			productName = PirateShipsAppTests;
+			productReference = 7197805E22382CD30067B0D6 /* PirateShipsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7197803F22382CD10067B0D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Victor;
+				TargetAttributes = {
+					7197804622382CD10067B0D6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					7197805D22382CD30067B0D6 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 7197804622382CD10067B0D6;
+					};
+				};
+			};
+			buildConfigurationList = 7197804222382CD10067B0D6 /* Build configuration list for PBXProject "PirateShipsApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7197803E22382CD10067B0D6;
+			productRefGroup = 7197804822382CD10067B0D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7197804622382CD10067B0D6 /* PirateShipsApp */,
+				7197805D22382CD30067B0D6 /* PirateShipsAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7197804522382CD10067B0D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7197805822382CD30067B0D6 /* LaunchScreen.storyboard in Resources */,
+				7197805522382CD30067B0D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7197805C22382CD30067B0D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52AC98D0F9528F4834A87BDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PirateShipsAppTests/Pods-PirateShipsAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PirateShipsAppTests/Pods-PirateShipsAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PirateShipsAppTests/Pods-PirateShipsAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E92B856503A0A90AABE96B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PirateShipsAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6DA70DE53DAA2E91ED26FE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PirateShipsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A75DB25E91473C6F2900EAA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PirateShipsApp/Pods-PirateShipsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PirateShipsApp/Pods-PirateShipsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PirateShipsApp/Pods-PirateShipsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7197804322382CD10067B0D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71DA4DE7223F3682000B88EB /* ShipsListRouter.swift in Sources */,
+				7197804D22382CD10067B0D6 /* ShipsListViewController.swift in Sources */,
+				71DEBC832239FDE10010FB06 /* ShipOutput.swift in Sources */,
+				71DEBC7A2239F9930010FB06 /* APIProvider.swift in Sources */,
+				71DEBC7D2239F9E50010FB06 /* Path.swift in Sources */,
+				71DEBC6D2239EFB30010FB06 /* Ship.swift in Sources */,
+				71DEBC7F2239FB8B0010FB06 /* APICore.swift in Sources */,
+				71DEBC812239FDCB0010FB06 /* PirateShipsOutput.swift in Sources */,
+				71DEBC712239F6320010FB06 /* ShipsListViewModel.swift in Sources */,
+				71DEBC852239FE120010FB06 /* APIStub.swift in Sources */,
+				71DA4DEC223F5A18000B88EB /* LoadingManager.swift in Sources */,
+				71DEBC97223ED6690010FB06 /* ShipsListItemViewModel.swift in Sources */,
+				71DA4DE0223F270B000B88EB /* CustomLabel.swift in Sources */,
+				71DA4E01224033C2000B88EB /* ShipDetailsViewController.swift in Sources */,
+				71DA4DE5223F2C14000B88EB /* ShipsListHeaderCell.swift in Sources */,
+				7197804B22382CD10067B0D6 /* AppDelegate.swift in Sources */,
+				71DEBC8D223B538F0010FB06 /* CoreDataProvider.swift in Sources */,
+				71DA4DFD2240334C000B88EB /* Result.swift in Sources */,
+				71DEBC6F2239EFFB0010FB06 /* ShipsListProtocols.swift in Sources */,
+				71DA4DFF2240338A000B88EB /* ShipDetailsRouter.swift in Sources */,
+				7197805322382CD10067B0D6 /* PirateShipsApp.xcdatamodeld in Sources */,
+				71DA4DF1223F617C000B88EB /* Loader.swift in Sources */,
+				71DA4DE3223F29CC000B88EB /* UIImageView.swift in Sources */,
+				71DEBC8B223B53840010FB06 /* CoreDataManager.swift in Sources */,
+				71DA4DF9224030DF000B88EB /* ShipDetailsViewModel.swift in Sources */,
+				71DEBC92223D4A0D0010FB06 /* CoreDataStub.swift in Sources */,
+				71DEBC87223B42E50010FB06 /* ShipsListRepository.swift in Sources */,
+				71DEBC94223DAB8C0010FB06 /* ShipsListItemCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7197805A22382CD30067B0D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71DA4DF322402228000B88EB /* ShipsListRouterTests.swift in Sources */,
+				71DEBC9A223ED6C20010FB06 /* ShipsListItemViewModelTests.swift in Sources */,
+				7197806322382CD30067B0D6 /* ShipsListViewModelTests.swift in Sources */,
+				71DEBC732239F6E10010FB06 /* ShipsListRepositoryTests.swift in Sources */,
+				71DA4E0322409127000B88EB /* ShipDetailsRouterTests.swift in Sources */,
+				7132A7CC22956963003FBD25 /* ShipDetailsViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7197806022382CD30067B0D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7197804622382CD10067B0D6 /* PirateShipsApp */;
+			targetProxy = 7197805F22382CD30067B0D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7197805622382CD30067B0D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7197805722382CD30067B0D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7197806522382CD30067B0D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7197806622382CD30067B0D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7197806822382CD30067B0D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFE075138E95187D27F87710 /* Pods-PirateShipsApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RB92AJ6A5L;
+				INFOPLIST_FILE = "$(SRCROOT)/PirateShipsApp/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.PirateShipsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7197806922382CD30067B0D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D239C01A9D375A9279399AB /* Pods-PirateShipsApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RB92AJ6A5L;
+				INFOPLIST_FILE = "$(SRCROOT)/PirateShipsApp/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.PirateShipsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7197806B22382CD30067B0D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD6D7AB67B7B97CAD5CE459 /* Pods-PirateShipsAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PFBFJV3F25;
+				INFOPLIST_FILE = PirateShipsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.PirateShipsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PirateShipsApp.app/PirateShipsApp";
+			};
+			name = Debug;
+		};
+		7197806C22382CD30067B0D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9528DB52A18186449D1104FD /* Pods-PirateShipsAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PFBFJV3F25;
+				INFOPLIST_FILE = PirateShipsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.PirateShipsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PirateShipsApp.app/PirateShipsApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7197804222382CD10067B0D6 /* Build configuration list for PBXProject "PirateShipsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7197806522382CD30067B0D6 /* Debug */,
+				7197806622382CD30067B0D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7197806722382CD30067B0D6 /* Build configuration list for PBXNativeTarget "PirateShipsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7197806822382CD30067B0D6 /* Debug */,
+				7197806922382CD30067B0D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7197806A22382CD30067B0D6 /* Build configuration list for PBXNativeTarget "PirateShipsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7197806B22382CD30067B0D6 /* Debug */,
+				7197806C22382CD30067B0D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7197805122382CD10067B0D6 /* PirateShipsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7197805222382CD10067B0D6 /* PirateShipsApp.xcdatamodel */,
+			);
+			currentVersion = 7197805222382CD10067B0D6 /* PirateShipsApp.xcdatamodel */;
+			path = PirateShipsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7197803F22382CD10067B0D6 /* Project object */;
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PirateShipsApp/DataManager/API/APIStub/APIStub.swift"
+            timestampString = "581541733.991695"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "request(url:httpMethod:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PirateShipsApp.APIStub.request&lt;A where A: Swift.Decodable&gt;(url: Swift.Array&lt;PirateShipsApp.PathURL&gt;, httpMethod: PirateShipsApp.HttpMethod, completion: (PirateShipsApp.Result&lt;A&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PirateShipsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/VictorMagalhaes/Documents/PirateShips/PirateShipsApp/DataManager/API/APIStub/APIStub.swift"
+                  timestampString = "581522566.032315"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "920">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PirateShipsApp.APIStub.request&lt;A where A: Swift.Decodable&gt;(url: Swift.Array&lt;PirateShipsApp.PathURL&gt;, httpMethod: PirateShipsApp.HttpMethod, completion: (PirateShipsApp.Result&lt;A&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PirateShipsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/VictorMagalhaes/Documents/PirateShips/PirateShipsApp/DataManager/API/APIStub/APIStub.swift"
+                  timestampString = "581522566.0369329"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "927">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PirateShipsApp/DataManager/API/APIStub/APIStub.swift"
+            timestampString = "581541733.9918931"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "request(url:httpMethod:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PirateShipsApp.APIStub.request&lt;A where A: Swift.Decodable&gt;(url: Swift.Array&lt;PirateShipsApp.PathURL&gt;, httpMethod: PirateShipsApp.HttpMethod, completion: (PirateShipsApp.Result&lt;A&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PirateShipsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/VictorMagalhaes/Documents/PirateShips/PirateShipsApp/DataManager/API/APIStub/APIStub.swift"
+                  timestampString = "581522566.0441999"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "1209">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PirateShipsApp.APIStub.request&lt;A where A: Swift.Decodable&gt;(url: Swift.Array&lt;PirateShipsApp.PathURL&gt;, httpMethod: PirateShipsApp.HttpMethod, completion: (PirateShipsApp.Result&lt;A&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PirateShipsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/VictorMagalhaes/Documents/PirateShips/PirateShipsApp/DataManager/API/APIStub/APIStub.swift"
+                  timestampString = "581522566.046908"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "1237">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
